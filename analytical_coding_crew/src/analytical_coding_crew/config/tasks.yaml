@@ -1,0 +1,19 @@
+analysis_task:
+  description: >
+    Conduct a thorough analysis about {topic}
+    Make sure you find any interesting and relevant information given
+    the current year is {current_year}.
+  expected_output: >
+    A summary of the changes that happened in the data you uncovered through your analysis about {topic}
+  agent: analytical_agent
+
+coding_task:
+  description: >
+    Create a well-structured, efficient, and maintainable python codebase using the data given about {topic}.
+    Ensure the code is clean and easy to understand, with appropriate comments and documentation.
+    given the current year is {current_year}.
+  expected_output: >
+    A fully fledged Code with its documentation with the data analysis findings, 
+    each with a brief section of information for each company.
+    Formatted as markdown without '```'
+  agent: coding_agent
